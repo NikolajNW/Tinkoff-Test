@@ -1,4 +1,4 @@
-package testData;
+package enums;
 
 /**
  * Created by Nikolaj on 13.09.2017.

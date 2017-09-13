@@ -8,8 +8,8 @@ import pageObject.ProviderPage;
 import java.util.HashMap;
 import java.util.Map;
 
-import static testData.RegionEnums.MSK;
-import static testData.RegionEnums.SPB;
+import static enums.RegionEnums.MSK;
+import static enums.RegionEnums.SPB;
 
 /**
  * Created by Nikolaj on 09.09.2017.
@@ -37,6 +37,7 @@ public class TinkoffTest extends BaseTest{
         PERIOD.put("13.2017", "Поле заполнено некорректно");
         PERIOD.put("00.2017", "Поле заполнено некорректно");
     }
+
     private static final Map<String, String> SUMM;
     static {
         SUMM = new HashMap<String, String>();

@@ -1,7 +1,7 @@
 package pageObject;
 
 import base.BasePage;
-import testData.RegionEnums;
+import enums.RegionEnums;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -15,8 +15,8 @@ public class CommunalPage extends BasePage {
 
     By regionLocator = By.xpath("//div[text()='Коммунальные платежи']/span[2]");
     By searchRegionLocator = By.xpath("//div[contains(@class, 'ui-input__column')]/input[1]");
-    By firstSearchResultLocator = By.xpath("/html/body/div[1]/div/div[2]/div[3]/div[2]/div/div/div/div[2]/div/div/span");
-    By FirstElement = By.xpath("/html/body/div[1]/div/div[2]/div[1]/div[1]/div[2]/div/div/div/div/span/section/ul/li[1]/span[2]/a");
+    By firstSearchResultLocator = By.xpath("//div[2]/div/div[1]/span");
+    By FirstElement = By.xpath("//span/section/ul/li[1]/span[2]/a");
 
     /** Проверяем регион, если не соответствует меняем*/
     public void checkRegion(RegionEnums region){

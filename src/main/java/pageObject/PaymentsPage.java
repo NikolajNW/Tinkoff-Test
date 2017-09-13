@@ -13,8 +13,8 @@ public class PaymentsPage extends BasePage {
     }
 
     By communalPage = By.xpath("//*[text()='Коммунальные платежи']");
-    By searchField = By.xpath("/html/body/div[1]/div/div[2]/div[1]/div[1]/div[2]/div/div[1]/div[2]/div/div/div/label/input");
-    By firstElementSearchResult = By.xpath("/html/body/div[1]/div/div[2]/div[1]/div[1]/div[2]/div/div[1]/div[2]/div/div[2]/div/div[1]/div/div[1]/div/div[1]/div[1]");
+    By searchField = By.xpath("//div/div/label/input");
+    By firstElementSearchResult = By.xpath("//div[text()='ЖКУ-Москва']");
 
     public CommunalPage goToCommunalPage() {
         click(communalPage);
