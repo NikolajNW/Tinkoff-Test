@@ -14,13 +14,14 @@ public class PaymentsPage extends BasePage {
 
     By communalPage = By.xpath("//*[text()='Коммунальные платежи']");
     By searchField = By.xpath("//div/div/label/input");
-    By firstElementSearchResult = By.xpath("//div[text()='ЖКУ-Москва']");
+    By firstElementSearchResult = By.xpath("//div[@class='U_INn _3F9eq _1E2xX']/div/div/div[1]");
 
     public CommunalPage goToCommunalPage() {
         click(communalPage);
         return (new CommunalPage(wd));
     }
 
+    /**Возвращаем выбарнную страницу*/
     public BasePage clickSearchResult(String text) {
         setValue(searchField, text);
         click(firstElementSearchResult);

@@ -29,6 +29,9 @@ public class ProviderPage extends BasePage {
         click(secondTabLocator);
     }
 
+    /**Param:
+     * Key: test data
+     * Value: error message*/
     public void checkFieldCode(Map<String, String> testData){
         for (Map.Entry<String, String> data : testData.entrySet()) {
             setValue(codeLocator, data.getKey());
@@ -37,6 +40,9 @@ public class ProviderPage extends BasePage {
         }
     }
 
+    /**Param:
+     * Key: test data
+     * Value: error message*/
     public void checkFieldPeriod(Map<String, String> testData){
         for (Map.Entry<String, String> data : testData.entrySet()) {
             setValue(periodLocator, data.getKey());
@@ -45,6 +51,9 @@ public class ProviderPage extends BasePage {
         }
     }
 
+    /**Param:
+     * Key: test data
+     * Value: error message*/
     public void checkFieldSumm(Map<String, String> testData) {
         for (Map.Entry<String, String> data : testData.entrySet()) {
             setValue(paymentSummLocator, data.getKey());
