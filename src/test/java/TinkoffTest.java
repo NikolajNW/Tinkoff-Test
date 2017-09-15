@@ -21,6 +21,8 @@ public class TinkoffTest extends BaseTest{
     CommunalPage communalPage;
     ProviderPage providerPage;
 
+    /** Map.Key: Value for field
+     * Map.Value: Error message*/
     private static final Map<String, String> CODE;
     static {
         CODE = new HashMap<String, String>();
@@ -29,6 +31,8 @@ public class TinkoffTest extends BaseTest{
         CODE.put("111111111", "Поле неправильно заполнено");
     }
 
+    /** Map.Key: Value for field
+     * Map.Value: Error message*/
     private static final Map<String, String> PERIOD;
     static {
         PERIOD = new HashMap<String, String>();
@@ -38,6 +42,8 @@ public class TinkoffTest extends BaseTest{
         PERIOD.put("00.2017", "Поле заполнено некорректно");
     }
 
+    /** Map.Key: Value for field
+     * Map.Value: Error message*/
     private static final Map<String, String> SUMM;
     static {
         SUMM = new HashMap<String, String>();

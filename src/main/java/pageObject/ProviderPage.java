@@ -29,37 +29,17 @@ public class ProviderPage extends BasePage {
         click(secondTabLocator);
     }
 
-    /**Param:
-     * Key: test data
-     * Value: error message*/
+
     public void checkFieldCode(Map<String, String> testData){
-        for (Map.Entry<String, String> data : testData.entrySet()) {
-            setValue(codeLocator, data.getKey());
-            wd.findElement(codeLocator).sendKeys(Keys.ENTER);
-            Assert.assertEquals(data.getValue(), getText(errorCodeLocator));
-        }
+        checkField(codeLocator, errorCodeLocator, testData);
     }
 
-    /**Param:
-     * Key: test data
-     * Value: error message*/
     public void checkFieldPeriod(Map<String, String> testData){
-        for (Map.Entry<String, String> data : testData.entrySet()) {
-            setValue(periodLocator, data.getKey());
-            wd.findElement(periodLocator).sendKeys(Keys.ENTER);
-            Assert.assertEquals(data.getValue(), getText(errorPeriodLocator));
-        }
+        checkField(periodLocator, errorPeriodLocator, testData);
     }
 
-    /**Param:
-     * Key: test data
-     * Value: error message*/
     public void checkFieldSumm(Map<String, String> testData) {
-        for (Map.Entry<String, String> data : testData.entrySet()) {
-            setValue(paymentSummLocator, data.getKey());
-            wd.findElement(paymentSummLocator).sendKeys(Keys.ENTER);
-            Assert.assertEquals(data.getValue(), getText(errorPaymentSummLocator));
-        }
+        checkField(paymentSummLocator, errorPaymentSummLocator, testData);
     }
 
     public String getBannerText(){
